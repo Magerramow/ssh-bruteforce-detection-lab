@@ -14,6 +14,7 @@ Simulate and detect SSH brute-force authentication attempts using system logs.
 journalctl -u ssh -b
 grep "Failed password"
 grep "Accepted password"
+sudo journalctl -u ssh -b | grep "password.*testuser"
 ```
 
 ## Analysis
